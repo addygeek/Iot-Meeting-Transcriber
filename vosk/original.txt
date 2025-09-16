@@ -1,0 +1,1 @@
+Hello, my name is Aditya, We are going to present a Iot Device that can summarize meetings and lectures and present you in summarise key points
