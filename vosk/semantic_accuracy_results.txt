@@ -1,0 +1,5 @@
+File: transcript_5.txt
+Model used: vosk-model-en-in-0.5
+Time taken: 1.43 seconds
+Semantic Accuracy: 99.89%
+--------------------------------------------------

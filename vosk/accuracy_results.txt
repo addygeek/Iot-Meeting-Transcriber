@@ -1,0 +1,10 @@
+File: transcript.txt
+Model used: vosk-model-small-en-in-0.4
+Time taken: 1.70 seconds
+Accuracy: 80.77%
+--------------------------------------------------
+File: transcript_5.txt
+Model used: vosk-model-en-in-0.5
+Time taken: 1.43 seconds
+Accuracy: 96.15%
+--------------------------------------------------

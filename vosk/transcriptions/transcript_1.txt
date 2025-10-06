@@ -1,1 +1,0 @@
-hello my name is audit here we are going to present a iot device that can summarize meetings and lectures and present you in summarize key points
