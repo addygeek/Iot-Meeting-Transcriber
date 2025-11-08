@@ -1,0 +1,21 @@
+# Core dependencies for Local Meeting & Lecture Summarizer
+
+# Audio recording
+pyaudio>=0.2.11
+
+# Speech-to-text
+vosk>=0.3.45
+
+# Natural language processing
+nltk>=3.8
+scikit-learn>=1.0.0
+numpy>=1.21.0
+
+# Configuration
+PyYAML>=6.0
+
+transformers
+# Optional: For T5 abstractive summarization (heavier, better quality)
+# Uncomment if you want to use t5_small mode
+# transformers>=4.30.0
+# torch>=2.0.0
