@@ -1,0 +1,5 @@
+Model used: vosk-model-small-en-in-0.4
+Time taken: 1.47 seconds
+
+Text:
+hello my name is ah it's year we're going to present a device that can summarize meetings and lectures and present you in summarize key points

@@ -1,0 +1,14 @@
+{
+  "session_name": "session_2025-10-28_15-56-56",
+  "start_time": "2025-10-28_15-56-56",
+  "stop_time": "2025-10-28_15-57-48",
+  "sample_rate": 16000,
+  "channels": 1,
+  "mic_device_name": null,
+  "vosk_model_path": "D:\\PROGRAMING\\7th sem 7\\iot\\vosk\\vosk-model-small-en-in-0.4",
+  "wav_file": "session_2025-10-28_15-56-56.wav",
+  "transcript_file": "session_2025-10-28_15-56-56.txt",
+  "summary_file": "session_2025-10-28_15-56-56_summary.txt",
+  "summary_mode": "textrank",
+  "errors": []
+}

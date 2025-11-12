@@ -4,7 +4,7 @@ import json
 from fastapi import FastAPI, WebSocket
 import uvicorn
 from datetime import datetime
-from stt_vosk import WakeSleepVosk
+from vosk.stt_vosk1 import WakeSleepVosk
 
 app = FastAPI()
 stt = WakeSleepVosk(model_path="vosk-model-en-in-0.5")
@@ -14,27 +14,29 @@ stt.start_stream()
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
     print("Frontend connected")
-    last_status = None
+    last_status = None  # track previous status
     try:
         while True:
             transcripts = stt.get_transcripts()
-            current_status = "transcribing" if stt.active else "paused"
+            current_status = "transcribing" if stt.active else "idle"
 
-            # Send new transcripts (only if active)
+            # Send any new transcripts
             for t in transcripts:
-                await websocket.send_text(json.dumps({
+                message = {
                     "status": current_status,
                     "text": t,
                     "timestamp": datetime.utcnow().isoformat()
-                }))
+                }
+                await websocket.send_text(json.dumps(message))
 
-            # Status changed (wake/sleep toggle)
+            # If status changed (wake/sleep), send empty message to update frontend
             if current_status != last_status:
-                await websocket.send_text(json.dumps({
+                message = {
                     "status": current_status,
                     "text": "",
                     "timestamp": datetime.utcnow().isoformat()
-                }))
+                }
+                await websocket.send_text(json.dumps(message))
                 last_status = current_status
 
             await asyncio.sleep(0.1)

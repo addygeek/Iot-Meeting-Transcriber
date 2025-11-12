@@ -1,0 +1,10 @@
+auto_summary_interval_seconds: 0
+block_duration_ms: 500
+channels: 1
+extractive_sentences: 5
+mic_device_name: null
+model_path: D:\PROGRAMING\7th sem 7\iot\vosk\vosk-model-small-en-in-0.4
+sample_rate: 16000
+save_dir: recordings
+summarizer: textrank
+wav_format: PCM_16

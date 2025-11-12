@@ -1,0 +1,7 @@
+============================================================
+Session Log: session_2025-10-28_15-53-43
+Started: 2025-10-28 15:53:43
+============================================================
+
+[2025-10-28 15:53:43] [INFO] Session started
+[2025-10-28 15:53:43] [ERROR] Error starting session: Failed to load Vosk model: Failed to create a model

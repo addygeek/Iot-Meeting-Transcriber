@@ -1,3 +1,7 @@
 /vosk/vosk-model-en-us-0.22-lgraph
 /vosk/vosk-model-small-en-us-0.15
 /vosk/__pycache__
+/vosk/vosk-model-en-in-0.5
+/vosk/vosk-model-small-en-in-0.4
+iot-meeting-minutes\recordings
+iot-meeting-minutes\transcripts

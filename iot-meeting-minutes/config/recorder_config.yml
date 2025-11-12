@@ -1,0 +1,31 @@
+# Configuration for Local Meeting & Lecture Summarizer
+# Edit this file to customize your setup
+
+# Path to your Vosk model directory (REQUIRED - update this!)
+# Download models from: https://alphacephei.com/vosk/models
+model_path: D:\PROGRAMING\7th sem 7\iot\vosk\vosk-model-small-en-in-0.4
+
+# Audio settings
+sample_rate: 16000        # Sample rate in Hz (16000 recommended for Vosk)
+channels: 1               # Number of audio channels (1 = mono, 2 = stereo)
+block_duration_ms: 500    # Audio block duration in milliseconds
+
+# WAV file format
+wav_format: PCM_16        # Audio format (PCM_16 is standard)
+
+# Output directory
+save_dir: recordings      # Directory where recordings will be saved
+
+# Summarizer settings
+summarizer: textrank      # Options: 'textrank' (fast, extractive) or 't5_small' (better quality, slower)
+extractive_sentences: 5   # Number of sentences for extractive summary
+
+# Auto-summary during recording
+# Set to 0 to disable, or number of seconds between auto-summaries
+auto_summary_interval_seconds: 0
+
+# Microphone selection (optional)
+# Leave as null to use default microphone
+# Or specify part of the microphone name to use a specific device
+mic_device_name: null
+# Example: mic_device_name: "USB Microphone"
